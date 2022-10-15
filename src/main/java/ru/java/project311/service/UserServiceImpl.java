@@ -6,9 +6,11 @@ import ru.java.project311.dao.UserDao;
 import ru.java.project311.model.User;
 
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     public final UserDao userDao;
